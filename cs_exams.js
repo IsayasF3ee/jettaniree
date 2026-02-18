@@ -5,6 +5,276 @@ const exams = {
   "moe2017":[
     ],
   "AAU2023":[
+
+  {
+    "q": "How many times is the phrase \"In the loop\" printed when the code is executed?",
+    "options": ["20", "10", "3", "2"],
+    "answer": 3,
+    "explanation": "The loop runs while i<j and prints only when i is even. It prints 2 times."
+  },
+  {
+    "q": "What is the output of the given code snippet with logical operators?",
+    "options": ["5\\n1", "5\\n2", "4\\n1", "4\\n2"],
+    "answer": 0,
+    "explanation": "(x && y)=0 so ++z executes making z=5 and a=1."
+  },
+  {
+    "q": "______ is a function that invokes itself?",
+    "options": ["Recursive function", "Inline function", "Built in function", "User defined function"],
+    "answer": 0,
+    "explanation": "A recursive function is one that calls itself."
+  },
+  {
+    "q": "Which control flow statement is represented by the flowchart?",
+    "options": ["while loop", "do…while loop", "if…else statement", "for loop"],
+    "answer": 1,
+    "explanation": "A do…while loop checks the condition after executing the body."
+  },
+  {
+    "q": "What is the output of the PH value program?",
+    "options": ["Invalid PH Value", "Neutral", "Alkaline", "Invalid PH Value. Alkaline"],
+    "answer": 3,
+    "explanation": "ph>15 prints invalid and then alkaline because ph>7.5."
+  },
+  {
+    "q": "What will be the result after executing the function program?",
+    "options": ["12, 9, 3", "50, 9, 3", "53, 9, 3", "53, 45, 8"],
+    "answer": 2,
+    "explanation": "Function uses pass-by-value so x and y remain unchanged. Result is 53."
+  },
+  {
+    "q": "What do arrays do?",
+    "options": [
+      "Hold address of a single value",
+      "Hold one value",
+      "Hold values of the same type under a single name",
+      "Hold addresses of values under a single name"
+    ],
+    "answer": 2,
+    "explanation": "Arrays store multiple values of the same data type using one name."
+  },
+  {
+    "q": "Which statement best describes relational data model?",
+    "options": [
+      "Allows multiple records linked to same owner file",
+      "Tree structure with parent child relationship",
+      "Manage data as tuples grouped into relations",
+      "Uses entities attributes relationships",
+      "Describes physical storage"
+    ],
+    "answer": 2,
+    "explanation": "Relational model organizes data into tables (relations) consisting of tuples."
+  },
+  {
+    "q": "Which constraint is violated when inserting null into Dept_Name?",
+    "options": [
+      "Domain constraint",
+      "Key constraint",
+      "Entity Integrity constraint",
+      "Referential Integrity constraint"
+    ],
+    "answer": 2,
+    "explanation": "Primary key attributes cannot be null, violating entity integrity."
+  },
+  {
+    "q": "Consider relation R with given functional dependencies. Which statement is true?",
+    "options": [
+      "Relation is in second normal form",
+      "Relation is in third normal form",
+      "Candidate key is BC",
+      "Relation is in second normal form",
+      "None"
+    ],
+    "answer": 4,
+    "explanation": "None of the given statements correctly describe the relation."
+  },
+  {
+    "q": "Which schema describes the structure of the whole database?",
+    "options": ["Internal schema", "Conceptual schema", "External schema", "Schema"],
+    "answer": 1,
+    "explanation": "Conceptual schema represents the entire database structure."
+  },
+  {
+    "q": "Which is the disadvantage of database approach?",
+    "options": [
+      "Data consistency",
+      "Sharing of data",
+      "Improved data integrity",
+      "Increased concurrency",
+      "Enforcement of standards",
+      "Complexity",
+      "None"
+    ],
+    "answer": 5,
+    "explanation": "Database systems introduce complexity compared to file systems."
+  },
+  {
+    "q": "Which statements are correct about relation?",
+    "options": [
+      "Values of each column is repeating group",
+      "Values in column from different domain",
+      "Relation is in 1NF",
+      "Two rows can be identical",
+      "Sequence of rows and columns insignificant",
+      "None"
+    ],
+    "answer": 2,
+    "explanation": "Relations are in 1NF and order does not matter."
+  },
+  {
+    "q": "Which statement is correct about executing SQL query with aggregate?",
+    "options": [
+      "Query executes and gets departments",
+      "Fails because group by column missing",
+      "Fails because aggregate used in WHERE",
+      "Executes and gets employees"
+    ],
+    "answer": 2,
+    "explanation": "Aggregate functions cannot be used directly in WHERE clause."
+  },
+  {
+    "q": "Which database security measure hides details but allows aggregates?",
+    "options": [
+      "Inference control",
+      "Access control",
+      "Integrity control",
+      "Encryption",
+      "None"
+    ],
+    "answer": 0,
+    "explanation": "Inference control prevents deduction of sensitive data."
+  },
+  {
+    "q": "Which query optimization modifies internal representation?",
+    "options": [
+      "Systematic estimation",
+      "Semantic query optimization",
+      "Cost estimation",
+      "Heuristic rules",
+      "A and C"
+    ],
+    "answer": 3,
+    "explanation": "Heuristic optimization transforms query representation."
+  },
+  {
+    "q": "Which is not true about locks?",
+    "options": [
+      "Large granularity easier to administer",
+      "Small granularity cause more conflicts",
+      "Large granularity fewer details",
+      "Table-level locks possible",
+      "Database-level locks possible"
+    ],
+    "answer": 1,
+    "explanation": "Small granularity reduces conflicts but increases overhead."
+  },
+  {
+    "q": "If all operations of T execute consecutively, schedule is?",
+    "options": [
+      "Cascaded schedule",
+      "Serial schedule",
+      "Cascadeless schedule",
+      "Recoverable schedule",
+      "None"
+    ],
+    "answer": 1,
+    "explanation": "Serial schedule runs transactions one after another."
+  },
+  {
+    "q": "Which transaction property ensures changes persist after commit?",
+    "options": [
+      "Isolation",
+      "Durability",
+      "Atomicity",
+      "Consistency",
+      "None"
+    ],
+    "answer": 1,
+    "explanation": "Durability guarantees permanent changes."
+  },
+  {
+    "q": "If transaction modifies DB only after commit, technique is?",
+    "options": [
+      "Undo",
+      "Late modification",
+      "Immediate modification",
+      "Deferred modification"
+    ],
+    "answer": 3,
+    "explanation": "Deferred modification delays database changes until commit."
+  },
+  {
+    "q": "Which statement is false?",
+    "options": [
+      "Object-oriented DB stores rows and tables",
+      "Relational DB uses tables",
+      "OODB allows object identification",
+      "OODB allows reuse",
+      "None"
+    ],
+    "answer": 0,
+    "explanation": "Rows and tables belong to relational model, not OODB."
+  },
+  {
+    "q": "Which is correct about software product?",
+    "options": [
+      "Software created for client",
+      "Includes design and test docs",
+      "Includes requirements and manuals",
+      "All of the above"
+    ],
+    "answer": 3,
+    "explanation": "Software product includes code and documentation."
+  },
+  {
+    "q": "Requirements related to quality features are?",
+    "options": [
+      "Business requirements",
+      "Functional requirements",
+      "Non-functional requirements",
+      "User requirements"
+    ],
+    "answer": 2,
+    "explanation": "Non-functional requirements define quality attributes."
+  },
+  {
+    "q": "Requirement describing why project is needed is?",
+    "options": [
+      "Business requirements",
+      "Functional requirements",
+      "Non-functional requirements",
+      "User requirements"
+    ],
+    "answer": 0,
+    "explanation": "Business requirements explain project goals and purpose."
+  },
+  {
+    "q": "Which diagram models functionality of software?",
+    "options": [
+      "Use case diagram",
+      "Class diagram",
+      "E-R diagram",
+      "Deployment diagram"
+    ],
+    "answer": 0,
+    "explanation": "Use case diagrams show system functionality from user perspective."
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
     ],
   "AAU2025":[
 
@@ -22398,6 +22668,7 @@ function submitExam() {
     document.getElementById('score-display').style.display = 'block';
     document.getElementById('score-display').textContent = `You scored ${score} out of ${currentExam.length}`;
 }
+
 
 
 
